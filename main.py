@@ -3,7 +3,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 
-file_path = '/Users/gustavodias/dev/n2-camargo/chatice.csv'
+file_path = '/dev/n2-camargo/dataset.csv'
 data = pd.read_csv(file_path, encoding='latin1')
 
 features = ['NETPRO  ', 'Q20Age', 'Q21Gender', 'Q22Income', 'Q23FLY', 'Q5TIMESFLOWN', 'Q6LONGUSE']
