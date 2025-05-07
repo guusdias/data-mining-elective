@@ -45,7 +45,17 @@ max     11.000000    7.000000    3.000000    2.000000      6.000000    4.000000
 
 **Interpretação do perfil:** Esse grupo incomum parece consistir em passageiros jovens, com renda baixa, que voam raramente, possuem experiência moderada com voos e utilizam o aeroporto de SFO há um período médio a longo. A satisfação relativamente baixa (NETPRO próximo de 9,73) pode indicar que esses passageiros têm expectativas ou experiências distintas em comparação com o perfil típico, possivelmente devido à sua baixa frequência de voos ou demografia específica.
 
+## 2. Regras de Associação são utilizadas para buscar elementos que consequentemente implicam na presença de outros elementos em uma transação. Tais regras são utilizadas em diferentes áreas como marketing, vendas, sistema de recomendação, prevenção de crimes, etc. Portanto, gere regras de associação para um problema diferente de transações de itens de compras e apresente (2,0):
 
+### A. Problema:
+
+O problema envolve a análise de uma base de dados de títulos musicais que mais foram ouvidos de 1950 até os anos atuais. A partir desse título a ideia é que possamos retirar relações de músicas, gêneros e outras características com base nesses fatores. Então, por meio das colunas presentes, queremos verificar se é válido, por exemplo, considerar que toda música com bastante instrumento é mais dançante e assim por diante.
+
+### b. Dados utilizado para modelagem do problema (dataset)
+
+### c. Treinamento do modelo:
+
+### d. Resultado do modelo:
 
 ---
 
