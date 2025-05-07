@@ -1,4 +1,11 @@
-# data-mining-elective
+# N2
+
+# Dupla
+
+* Cristian Prochnow
+* Gustavo Henrique Dias
+
+# Questões
 
 ## 1. Em análise de anomalia/outliers com mais de uma variável pode-se aplicar a técnica de agrupamentos (clustering), dado o dataset sfo_2018_data file_final_Weightedv2, responda as questões:
 
