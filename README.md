@@ -6,6 +6,23 @@
 
 Sim, existe um grupo incomum de passageiros identificado como o menor cluster resultante da análise de agrupamento com a técnica K-means. Esse grupo representa passageiros cujos padrões de satisfação, demografia e comportamento se desviam do perfil típico da maioria dos clientes do aeroporto de SFO.
 
+### Resultado
+
+```bash
+Unusual cluster size: 6.84% of passengers
+
+Profile of unusual cluster:
+         NETPRO        Q20Age   Q22Income      Q23FLY  Q5TIMESFLOWN   Q6LONGUSE
+count  192.000000  192.000000  192.000000  192.000000    192.000000  192.000000
+mean     9.734375    1.125000    0.072917    0.098958      2.312500    2.427083
+std      1.946205    1.904802    0.375835    0.376814      1.492126    1.312404
+min      0.000000    0.000000    0.000000    0.000000      0.000000    0.000000
+25%      9.000000    0.000000    0.000000    0.000000      1.000000    1.000000
+50%     11.000000    0.000000    0.000000    0.000000      2.000000    2.000000
+75%     11.000000    2.000000    0.000000    0.000000      3.000000    4.000000
+max     11.000000    7.000000    3.000000    2.000000      6.000000    4.000000
+```
+
 ### A.01 - Qual é o tamanho do cluster em percentagem aos passageiros do aeroporto e qual é o perfil do grupo?\*\*
 
 **Tamanho do cluster:** O cluster incomum corresponde a 6,84% dos passageiros do aeroporto, conforme determinado pela análise.
