@@ -1,6 +1,6 @@
 # data-mining-elective
 
-## 1. Em análise de anomalia/outliers com mais de uma variável pode-se aplicar a técnica de agrupamentos (clustering), dado o dataset sfo_2018_data file_final_Weightedv2, responda as questões:\*\*
+## 1. Em análise de anomalia/outliers com mais de uma variável pode-se aplicar a técnica de agrupamentos (clustering), dado o dataset sfo_2018_data file_final_Weightedv2, responda as questões:
 
 ### A. Existe um grupo incomum de passageiros que não se enquadra no perfil típico de cliente do aeroporto?
 
@@ -23,7 +23,7 @@ min      0.000000    0.000000    0.000000    0.000000      0.000000    0.000000
 max     11.000000    7.000000    3.000000    2.000000      6.000000    4.000000
 ```
 
-### A.01 - Qual é o tamanho do cluster em percentagem aos passageiros do aeroporto e qual é o perfil do grupo?\*\*
+### A.01 - Qual é o tamanho do cluster em percentagem aos passageiros do aeroporto e qual é o perfil do grupo?
 
 **Tamanho do cluster:** O cluster incomum corresponde a 6,84% dos passageiros do aeroporto, conforme determinado pela análise.
 
@@ -37,6 +37,8 @@ max     11.000000    7.000000    3.000000    2.000000      6.000000    4.000000
 - **Q6LONGUSE (tempo de uso do SFO):** Média de 2,43 (em uma escala até 4), sugerindo que esses passageiros têm um uso de médio a longo prazo do aeroporto, com a maioria concentrada entre 1 e 4 anos.
 
 **Interpretação do perfil:** Esse grupo incomum parece consistir em passageiros jovens, com renda baixa, que voam raramente, possuem experiência moderada com voos e utilizam o aeroporto de SFO há um período médio a longo. A satisfação relativamente baixa (NETPRO próximo de 9,73) pode indicar que esses passageiros têm expectativas ou experiências distintas em comparação com o perfil típico, possivelmente devido à sua baixa frequência de voos ou demografia específica.
+
+
 
 ---
 
@@ -76,8 +78,6 @@ Os resultados do modelo incluem:
 - Coeficientes do modelo: Indicam a influência de cada variável na previsão.
 
 ```bash
-(venv) ➜  n2-camargo git:(main) ✗ python3 third-question.py
-
 Dataset gerado e salvo como 'dataset_emprestimo_1000.csv'
    Renda_Mensal      Idade  Score_Credito  Contratou_Emprestimo
 0      5.993428  48.993554      40.710649                     0
