@@ -5,7 +5,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-# criando o dataset
 np.random.seed(42)
 n_amostras = 1000
 renda_mensal = np.random.normal(5, 2, n_amostras)
@@ -25,7 +24,6 @@ dataset.to_csv('dataset_emprestimo_1000.csv', index=False)
 print("Dataset gerado e salvo como 'dataset_emprestimo_1000.csv'")
 print(dataset.head())
 
-# treinando o modelo
 X = dataset[['Renda_Mensal', 'Idade', 'Score_Credito']]
 y = dataset['Contratou_Emprestimo']
 
