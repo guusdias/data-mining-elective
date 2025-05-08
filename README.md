@@ -53,9 +53,57 @@ O problema envolve a análise de uma base de dados de títulos musicais que mais
 
 ### b. Dados utilizado para modelagem do problema (dataset)
 
+Os dados utilizados para esse treinamento foram pegos do Kaggle, a partir de um dataset disponível sobre uma análise das top 10000 músicas desde 1950 a atualmente. É importante destacar também que esse essa mesma publicação também tem disponível o mesmo dataset, só que filtrado, trazendo apenas os dados de 1960 até atualmente.
+
 ### c. Treinamento do modelo:
 
+Para treinamento do modelo, os dados que foram usados como base foram das colunas `'Artist Genres', 'Danceability', 'Energy', 'Valence', 'Acousticness', 'Instrumentalness'`, pois o objetivo fundamental era procurar alguma associação entre o gênero musical e outras variáveis geralmente consequentes à produção musical.
+
+Com isso em vista, o objetivo era determinar se o gênero de pop, com mais `Danceability` e `Acousticness` conseguia entregar a mesma `Energy` que uma forma mais sintetizada dos ritmos, por exemplo.
+
 ### d. Resultado do modelo:
+
+Abaixo então podemos ter uma prévia dos resultados do algoritmo.
+
+```shell
+Itemsets Frequentes:
+ support                                                                                                        itemsets
+0.017535                                                                                      (Artist Genres_album rock)
+0.014059                                                                                  (Artist Genres_australian pop)
+0.018114                                                                                 (Artist Genres_australian rock)
+0.022721                                                                                    (Artist Genres_classic rock)
+...
+Regra 44: Artist Genres_rap -> Instrumentalness_Low
+Suporte: 0.0147
+Confiança: 0.9964
+Lift: 1.0294
+--------------------------------------------------
+Regra 880: Energy_High, Acousticness_Medium, Valence_Medium -> Instrumentalness_Low
+Suporte: 0.0143
+Confiança: 0.9963
+Lift: 1.0293
+--------------------------------------------------
+Regra 1017: Energy_High, Valence_Medium, Artist Genres_pop, Acousticness_Low -> Instrumentalness_Low
+Suporte: 0.0215
+Confiança: 0.9963
+Lift: 1.0293
+```
+
+Com isso, foram obtidas algumas regras que denotam características interessantes em meio ao dataset analisado, sendo então, por exemplo (levando em conta os exemplos do código acima):
+
+`Energy_High, Valence_Medium, Artist Genres_pop, Acousticness_Low -> Instrumentalness_Low`
+
+> Aqui nós temos a consideração de que uma música com energia alta, valência média (nem muito animada, nem muito triste), sendo uma música pop e com baixo teor acústico (mais voz e ritmos sintetizados) **tende** a ter pouca instrumentação, sendo então com ritmos mais digitais/eletrônicos.
+
+E com os dados seguintes:
+
+```shell
+Suporte: 0.0215
+Confiança: 0.9963
+Lift: 1.0293
+```
+
+E aqui, podemos então interpretar esses resultados da forma ao qual a presença de músicas que se encaixam nesses fatores é de apenas pouco mais de 2% (0,0215), contudo a confiança dessa probabilidade é de quase 100% (0,9963), e com isso temos também a certeza (1.0293) de que essa combinação de fatores tem sim influência sobre o resultado final.
 
 ---
 
